@@ -1,4 +1,4 @@
-/* PRINCIPAL BODY AND MENU */
+/*/////////////////////////// PRINCIPAL BODY AND MENU ///////////////////////////*/
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -19,7 +19,7 @@ body {
 }
 
 
-/* NAV-BAR GENERAL*/
+/*/////////////////////////// NAV-BAR GENERAL ///////////////////////////*/
 
 nav {
     display: flex;
@@ -33,6 +33,12 @@ nav {
 .logo {
     width: 100px;
 }
+
+/* ADDED POINTER FOR HAMBURGUER MENU */
+.hamburgerMenu {
+  cursor: pointer;
+}
+
 .navbar-left ul,
 .navbar-right ul {
     cursor: pointer;
@@ -104,7 +110,7 @@ nav {
   }
 
 
-  /* MENU IN DESKTOP */
+/*/////////////////////////// MENU IN DESKTOP ///////////////////////////*/
 
   .desktop-menu {
     position: absolute;
@@ -145,12 +151,12 @@ nav {
   }
 
 
-/* MOBILE MENU */
+/*/////////////////////////// MOBILE MENU ///////////////////////////*/
 
 .mobile-menu {
   background-color: var(--white);
   position: absolute;
-  top: 60px;
+  top: 61px;  /* To avoid breaking with the nav-bar. */
   padding: 24px;
 }
 .mobile-menu a {
@@ -180,7 +186,8 @@ nav {
 }
 
 
-/* ASIDE PRODUCT DETAIL - SHOP CAR */
+/*/////////////////////////// ASIDE PRODUCT DETAIL - SHOP CAR ///////////////////////////*/
+
 .product-detail {
   background-color: var(--white);
   width: 360px;
@@ -257,7 +264,10 @@ nav {
   height: 50px;
 }
 
-/*MEDIA QUERY -> ALWAYS AT THE END */
+
+
+/*/////////////////////////// MEDIA QUERIES -> ALWAYS AT THE END ///////////////////////////*/
+
 @media (max-width: 640px) {
     .menu {
     display: block;
