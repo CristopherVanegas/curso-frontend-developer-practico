@@ -35,7 +35,7 @@ function toggleHamburguerMenu() {
     mobileMenu.classList.toggle('inactive');    // TOGGLE .inactive to mobileMenu -> The menu that displays from Hamburguer Menu
 }
 
-
+//coment
 function toggleCarritoAside() {
     const isMobileMenuInactive = mobileMenu.classList.contains('inactive');
     const isMenuDesktopInactive = desktopMenu.classList.contains('inactive');
