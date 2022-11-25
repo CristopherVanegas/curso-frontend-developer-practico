@@ -130,7 +130,7 @@ function renderProducts(productList) {
     }
 }
 
-// list of products
+// list of products //
 const productList = [];
 productList.push({
     name: 'Bike',
