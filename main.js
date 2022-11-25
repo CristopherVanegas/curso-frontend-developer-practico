@@ -1,16 +1,16 @@
 ////////////////////////////*  VARIABLES  *////////////////////////////
 
-const menuEmail = document.querySelector('.navbar-email');  // SELECTS the navbar-email bc later it will be USED as a BUTTON for USER INFO.
-const desktopMenu = document.querySelector('.desktop-menu');    // THIS IS THE MENU FOR QUICK USER INFO, it's a little window available only in DESKTOP WEB SITE.
-const hamburguerIcon = document.querySelector('.hamburgerMenu');    // Query SELECTOR for hamburguer menu, this will be used later for enabling MOBILE MENU "categories".
-const menuCarritoIcon = document.querySelector('.navbar-shopping-cart'); // This querySelector will be used as a button for enabling the PRODUCT-DETAIL window.
-const mobileMenu = document.querySelector('.mobile-menu');  // SHOWS Information for categories in the left-side of the web page.
-const asideProductDetail = document.querySelector('.product-detail');    // querySelector for .product-detail window.
-const cardsContainer = document.querySelector('.cards-container');  // SELECT the container where to INSERT cards objects.
+const menuEmail = document.querySelector('.navbar-email');                      // SELECTS the navbar-email bc later it will be USED as a BUTTON for USER INFO.
+const desktopMenu = document.querySelector('.desktop-menu');                    // THIS IS THE MENU FOR QUICK USER INFO, it's a little window available only in DESKTOP WEB SITE.
+const hamburguerIcon = document.querySelector('.hamburgerMenu');                // Query SELECTOR for hamburguer menu, this will be used later for enabling MOBILE MENU "categories".
+const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');        // This querySelector will be used as a button for enabling the PRODUCT-DETAIL window.
+const mobileMenu = document.querySelector('.mobile-menu');                      // SHOWS Information for categories in the left-side of the web page.
+const asideProductDetail = document.querySelector('.product-detail');           // querySelector for .product-detail window.
+const cardsContainer = document.querySelector('.cards-container');              // SELECT the container where to INSERT cards objects.
 
-menuEmail.addEventListener('click', toggleDesktopMenu); // eventListener for click to enable "Toggle Desktop Menu".
-hamburguerIcon.addEventListener('click', toggleHamburguerMenu); // event Listener for click to enable "Toggle Hamburguer menu".
-menuCarritoIcon.addEventListener('click', toggleCarritoAside);  // eventListener for click to enable "Toggle Carrito Aside".
+menuEmail.addEventListener('click', toggleDesktopMenu);                         // eventListener for click to enable "Toggle Desktop Menu".
+hamburguerIcon.addEventListener('click', toggleHamburguerMenu);                 // event Listener for click to enable "Toggle Hamburguer menu".
+menuCarritoIcon.addEventListener('click', toggleCarritoAside);                  // eventListener for click to enable "Toggle Carrito Aside".
 
 
 ////////////////////////////*  TOGGLE MENUS  *////////////////////////////
