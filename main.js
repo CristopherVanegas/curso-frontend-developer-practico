@@ -13,7 +13,7 @@ hamburguerIcon.addEventListener('click', toggleHamburguerMenu); // event Listene
 menuCarritoIcon.addEventListener('click', toggleCarritoAside);  // eventListener for click to enable "Toggle Carrito Aside".
 
 
-////////////////////////////*  FUNCTIONS  *////////////////////////////
+////////////////////////////*  TOGGLE MENUS  *////////////////////////////
 
 function toggleDesktopMenu() {
     const isCarritoIconInactive = asideProductDetail.classList.contains('inactive');
@@ -49,6 +49,13 @@ function toggleCarritoAside() {
     
     asideProductDetail.classList.toggle('inactive'); // TOGGLE .inactive to aside -> Product Detail
 }
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////*  RENDERING PRODUCT CARDS  *///////////////////////
 
 function renderProducts(productList) { 
     for (product of productList) {
@@ -130,7 +137,12 @@ function renderProducts(productList) {
     }
 }
 
-// list of products //
+//////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////*  RENDERING LIST OF PRODUCTS  */////////////////////////
+
 const productList = [];
 productList.push({
     name: 'Bike',
@@ -153,3 +165,4 @@ productList.push({
 
 renderProducts(productList);
 
+////////////////////////////////////////////////////////////////////////////////////
